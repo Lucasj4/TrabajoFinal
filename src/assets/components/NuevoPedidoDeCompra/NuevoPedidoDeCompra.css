@@ -1,0 +1,116 @@
+main{
+    width: 100%;
+    background:#4A90E2;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  }
+.form-container{
+    height:auto;
+    background: #1d2b3a;
+   border-radius: 10px;
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    
+    border-radius: 10px;
+ 
+}
+.form-title{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+    text-align: center;
+}
+/* .primera{
+    background-color:  rgba(255, 255, 255, 0.25);
+    width: 400px;
+    height: 475px;
+    border-radius: 10px 0 0 10px;
+} */
+.form-item {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 1rem 0;
+    color: #fff;
+    position: relative;
+}
+.form-item-buttons{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.form-item-buttons button{
+    padding: 10px;
+    font-size: 1rem;
+    background: #1d2b3a ;
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    border-radius: 10px ;
+}
+.form-item-buttons button:hover{
+    background-color: #4A90E2;
+    color: #FF6B6B;
+}
+.form-item input{
+    background: #1d2b3a;
+    color: #fff;
+    padding: 10px 5px ;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    
+    
+}
+.form-item input:not(:empty) ~ label {
+    transform: translateX(5px) translateY(-17px);
+    color: #00dfc4;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    font-size: 0.8rem;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+.form-item label {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px ;
+    font-size: 1rem;
+    color:  #00dfc4;;
+    pointer-events: none;
+   
+    transition: color 0.3s, transform 0.3s;
+}
+.form-item.focused {
+    label {
+      transform: translateX(5px) translateY(-17px);
+      color: #00dfc4;
+      background: #1d2b3a;
+      border-left: 1px solid #00dfc4;
+      border-right: 1px solid #00dfc4;
+      font-size: 0.8rem;
+      padding: 0 10px;
+    }
+  }
+
+
+
+
+
