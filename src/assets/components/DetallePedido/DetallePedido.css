@@ -1,0 +1,36 @@
+:root{
+    --color-primary: #3399ff;
+    --secondary: #007fff;
+    --grey: #6b7a90;
+    --dark-blue: #003a75;
+    --background: #101418;
+    --celeste-agua: #00dfc4;
+    --background2: #1d2b3a;
+
+}
+
+.table__cell{
+    width: 200px;
+    height: 50px;
+}
+.date-selector{
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    color: #fff;
+}
+.date-selector button{
+    background-color: var(--secondary);
+    outline: none;
+    border: 1px solid var(--secondary);
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: #fff;
+}
+.date-selector__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,15 @@
+:root{
+    --color-primary: #3399ff;
+    --secondary: #007fff;
+    --grey: #6b7a90;
+    --dark-blue: #003a75;
+    --background: #101418;
+    --celeste-agua: #00dfc4;
+    --background2: #1d2b3a;
+
+}
+.custom-select{
+    background: #101418;
+    width: 300px;
+    
+}

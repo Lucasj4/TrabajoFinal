@@ -16,7 +16,7 @@
 
 /* Estilo cuando isOpen es verdadero */
 .sidebar-expanded {
-    width: 250px;
+    width: 350px;
   }
   
   /* Estilo cuando isOpen es falso */
@@ -25,9 +25,14 @@
   }
 .top-section{
     display: flex;
-    align-items: center;
+    align-items: left;
     padding: 20px 15px;
     color: #fff;
+}
+
+.top-section h2{
+  
+    font-size: 1.5rem;
 }
 
 .top-section__active{
@@ -51,7 +56,7 @@
 .bars{
     display: flex;
    
-    font-size: 25px;
+    font-size: 1.5rem;
 
 }
 
@@ -81,7 +86,7 @@
     
 }
 .icon, .link_text{
-    font-size: 30px;
+    font-size: 1.6rem;
     
 }
 
