@@ -23,11 +23,7 @@ const Sidebar = ({ children }) => {
       name: "Detalle Pedido",
       icon: <DescriptionIcon/>,
     },
-    {
-      path: "/nuevopedidodecompra",
-      name: "Nuevo",
-      icon: <AddIcon/>,
-    },
+
   ];
   const sidebarClasses = isOpen
     ? "sidebar sidebar-expanded"

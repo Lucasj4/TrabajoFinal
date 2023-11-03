@@ -9,11 +9,42 @@
 
 }
 
-
+.pedido__date-selector{
+    background-color: var(--background2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    color: #fff;
+    width: 100%;
+}
+.pedido__date-selector button{
+    background-color: var(--secondary);
+    outline: none;
+    border: 1px solid var(--secondary);
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: #fff;
+}
+.pedido__date-selector__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.pedido__date-selector__item__date{
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+}
 .order__state{
     display: flex;
     gap: 1rem;   
     background-color: var(--dark-blue);
+    width: 100%;
 }
 .order__state__item{
     display: flex;
@@ -26,9 +57,15 @@
   
 }
 
-.container2{
+.table-container{
+    width: 600px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--background2);
-    border-radius: 10px;
+  
     
 }
 .proveedor{
@@ -37,6 +74,7 @@
     align-items: center;
     justify-content: space-around;
     height: 70px;
+    width: 100%;
     
 }
 
@@ -60,14 +98,9 @@
     border: 1px solid var(--color-primary);
     color: #fff;
 }
-.table-container{
-    width: 100%;
-    height:100VH;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container{
     background-color: var(--background);
+    border-radius: 10px;
 }
 
 .table{
@@ -95,4 +128,22 @@
 }
 .table__action--delete{
     color: var(--celeste-agua);
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions__button{
+    padding:  10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: var( --color-primary);
+    border: 1px solid var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
 }

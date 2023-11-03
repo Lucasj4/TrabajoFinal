@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./NuevoPedidoDeCompra.css";
 import {FaHome, FaTh, FaBars}from "react-icons/fa"
 import { Link } from "react-router-dom";
-
+import InputItem from "../InputItem/InputItem";
 const NuevoPedidoDeCompra = () => {
   const [isInputFocused, setInputFocused] = useState(false);
   const [articulo, setArticulo] = useState("");
@@ -77,6 +77,7 @@ const NuevoPedidoDeCompra = () => {
                 required
               />
             </div>
+            
             <div className="form-item">
               <label htmlFor="">Subtotal </label>
             </div>

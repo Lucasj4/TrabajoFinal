@@ -7,6 +7,7 @@ import BpCheckbox from "@mui/material/Checkbox";
 import MultipleSelect from "../MultipleSelect/MultipleSelect";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Sidebar from "../Sidebar/Sidebar";
 
 const PedidoDeCompra = () => {
   const [filas, setFilas] = useState([
@@ -20,29 +21,36 @@ const PedidoDeCompra = () => {
     // Agrega más filas según tus datos
   ]);
 
-  const handleEliminarFila = (indice) => {
-    const nuevasFilas = [...filas];
-    nuevasFilas.splice(indice, 1);
-    setFilas(nuevasFilas);
-  };
   const options = [
     { value: "gonzalez", label: "Gonzalez" },
     { value: "martinez", label: "Martinez" },
     { value: "pedro", label: "Pedro" },
   ];
-  
+
+  const handleEliminarFila = (indice) => {
+    const nuevasFilas = [...filas];
+    nuevasFilas.splice(indice, 1);
+    setFilas(nuevasFilas);
+  };
+
   return (
     <>
-      <div className="table-container">
-        <div className="container2">
-          <div className="proveedor">
-            <div className="proveedor__item">
-            <p>Proveedor</p>
-            <MultipleSelect options={options} />
+      <div className="container">
+        <div className="table-container">
+          <div className="pedido__date-selector">
+            <div className="pedido__date-selector__item">
+              <p>Fecha</p>
+              <input
+                type="date"
+                className="pedido__date-selector__item__date"
+              />
             </div>
-            
-            <button>Buscar</button>
+            <div className="pedido__date-selector__item">
+              <p>Proveedor</p>
+              <MultipleSelect options={options} />
+            </div>
           </div>
+
           <div className="order__state">
             <div className="order__state__item">
               <p>Pendiente</p>
@@ -89,6 +97,12 @@ const PedidoDeCompra = () => {
               ))}
             </tbody>
           </table>
+          <div className="actions">
+            <Link to="/detallepedido">
+              <button className="actions__button">Nuevo</button>
+            </Link>
+            <button className="actions__button">Salir</button>
+          </div>
         </div>
       </div>
     </>

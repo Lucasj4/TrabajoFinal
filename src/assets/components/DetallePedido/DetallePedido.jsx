@@ -1,8 +1,6 @@
 import React from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import Checkbox from "@mui/material/Checkbox";
-import BpCheckbox from "@mui/material/Checkbox";
 import "./DetallePedido.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -16,10 +14,9 @@ const DetallePedido = () => {
     subtotal: "2000",
   };
   const options = [
-    { value: "2023-11-01", label: "1 de Noviembre, 2023" },
-    { value: "2023-11-02", label: "2 de Noviembre, 2023" },
-    { value: "2023-11-03", label: "3 de Noviembre, 2023" },
-    { value: "2023-11-04", label: "4 de Noviembre, 2023" },
+    { value: "gonzalez", label: "Gonzalez" },
+    { value: "martinez", label: "Martinez" },
+    { value: "pedro", label: "Pedro" },
   ];
   const [filas, setFilas] = useState([
     {
@@ -40,48 +37,8 @@ const DetallePedido = () => {
       costoUnitario: 6.0,
       subtotal: 90.0,
     },
-    {
-      articulo1: "Artículo 4",
-      cantidad: 12,
-      costoUnitario: 7.0,
-      subtotal: 84.0,
-    },
-    {
-      articulo1: "Artículo 5",
-      cantidad: 30,
-      costoUnitario: 3.0,
-      subtotal: 90.0,
-    },
-    {
-      articulo1: "Artículo 6",
-      cantidad: 25,
-      costoUnitario: 8.0,
-      subtotal: 200.0,
-    },
-    {
-      articulo1: "Artículo 7",
-      cantidad: 8,
-      costoUnitario: 10.0,
-      subtotal: 80.0,
-    },
-    {
-      articulo1: "Artículo 8",
-      cantidad: 22,
-      costoUnitario: 5.5,
-      subtotal: 121.0,
-    },
-    {
-      articulo1: "Artículo 9",
-      cantidad: 18,
-      costoUnitario: 6.5,
-      subtotal: 117.0,
-    },
-    {
-      articulo1: "Artículo 10",
-      cantidad: 14,
-      costoUnitario: 9.0,
-      subtotal: 126.0,
-    },
+
+    
 
     // Agrega más filas según tus datos
   ]);
@@ -92,15 +49,19 @@ const DetallePedido = () => {
   };
   return (
     <>
-      <div className="table-container">
-        <div className="container2">
+      <div className="detalle__container">
+        <div className="detalle__table-container">
           <div className="date-selector">
             <div className="date-selector__item">
             <p>Fecha</p>
+            <input type="date" className="date-selector__item__date" />
+            </div>
+            <div className="date-selector__item">
+            <p>Proveedor</p>
             <MultipleSelect options={options}/>
             </div>
             
-            <button>Buscar</button>
+           
           </div>
 
           <table className="table">
@@ -155,6 +116,12 @@ const DetallePedido = () => {
            
             </tbody>
           </table>
+          <div className="detalle__buttons">
+            <Link to="/nuevalinea"><button>Nueva Linea</button></Link>
+            <Link to="/"><button>Guardar</button></Link>
+            <Link to="/"><button>Salir</button></Link>
+
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,115 @@
+:root{
+    --color-primary: #3399ff;
+    --secondary: #007fff;
+    --grey: #6b7a90;
+    --dark-blue: #003a75;
+    --background: #101418;
+    --background2: #1d2b3a;
+}
+
+
+.password__login{
+    display: flex;
+    width: 700px;
+    height: 500px;
+}
+
+.password__information{
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    text-align: center;
+   
+    
+    
+}
+
+.password__texts{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.password__texts h2{
+    margin-bottom: 20px;
+}
+.password__texts input{
+    background: var(--background2);
+    color: #fff;
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.password__container{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.login__noaccount{
+    color: #fff;
+}
+
+.password__form{
+    background: var(--background2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-top-right-radius: 24px ;
+    border-bottom-right-radius: 24px ;
+}
+.password__form__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 30px;
+}
+
+
+.password__form h2{
+    
+   margin-bottom: 20px;
+
+}
+
+.password__form__item input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+.button__password{
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--color-primary);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.login__forgotpassword{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.login__noaccount{
+    font-size: 1rem;
+    margin: 20px 0;
+}
