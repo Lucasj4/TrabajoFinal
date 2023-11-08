@@ -17,6 +17,7 @@
 }
 .detalle__table-container{
     width: 700px;
+    background: var(--background);
 }
 .table__cell{
     width: 200px;

@@ -9,6 +9,9 @@ import EditarLinea from "./assets/components/EditarLinea/EditarLinea";
 import Register from "./assets/components/Register/Register";
 import Login from "./assets/components/Login/Login";
 import OlvidarContraseña from "./assets/components/OlvidarContraseña/OlvidarContraseña";
+import GestionMercaderia from "./assets/components/GestionMercaderia/Mercaderia/GestionMercaderia";
+import DetalleMercaderia from "./assets/components/GestionMercaderia/DetalleMercaderia/DetalleMercaderia";
+import NuevaMercaderia from "./assets/components/GestionMercaderia/NuevaMercaderia/NuevaMercaderia";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +28,9 @@ function App() {
       <Route path="/registro" element={<Register/>}/>
       <Route path="/iniciosesion" element={<Login/>}/>
       <Route path="/recuperarcontraseña" element={<OlvidarContraseña/>}/>
+      <Route path="/mercaderia" element={<GestionMercaderia/>}/>
+      <Route path="/detalleMercaderia" element={<DetalleMercaderia/>}/>
+      <Route path="/nuevaMercaderia" element={<NuevaMercaderia/>}/>
 
 
     </Routes>

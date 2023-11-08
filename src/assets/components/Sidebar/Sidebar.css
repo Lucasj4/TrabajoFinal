@@ -1,5 +1,9 @@
 .container{
     display: flex;
+    background-image: url("public/images/ferreteria2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main{

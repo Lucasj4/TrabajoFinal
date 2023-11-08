@@ -4,17 +4,16 @@
     --grey: #6b7a90;
     --dark-blue: #003a75;
     --background: #101418;
-    --background2: #1d2b3a;
 }
 
 main{
     width: 100%;
     background:var(--background);
     text-align: center;
-    margin-left: 0%;
-    display: contents;
+    margin-left: 64%;
+    margin-right: 65%;
 }
-.container__edit {
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -22,13 +21,13 @@ main{
     justify-content: center;
     align-items: center;
   }
-.form-container__edit{
+.form-container{
     height:auto;
-    background: var(--background2);
+    background: #1d2b3a;
    border-radius: 10px;
     
 }
-.form__edit{
+.form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,21 +44,21 @@ main{
     text-align: center;
 }
 
-.form-item__edit {
+.form-item {
     display: flex;
-    
+    align-items: center;
     width: 90%;
     padding: 1rem 0;
-    color:#00dfc4;
-    flex-direction: column;
+    color: #fff;
+    position: relative;
 }
-.form-item-buttons__edit{
+.form-item-buttons{
     display: flex;
     width: 90%;
     justify-content: space-between;
     margin: 10px 0;
 }
-.form-item-buttons__edit button{
+.form-item-buttons button{
     padding: 10px;
     font-size: 1rem;
     background: #1d2b3a ;
@@ -67,11 +66,11 @@ main{
     border: 1px solid #00dfc4;
     border-radius: 10px ;
 }
-.form-item-buttons__edit button:hover{
+.form-item-buttons button:hover{
     background-color: #4A90E2;
     color: #fff;
 }
-.form-item__edit input{
+.form-item input{
     background: #1d2b3a;
     color: #fff;
     padding: 10px 5px ;
@@ -83,4 +82,41 @@ main{
     
     
 }
+.form-item input:not(:empty) ~ label {
+    transform: translateX(5px) translateY(-17px);
+    color: #00dfc4;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    font-size: 0.8rem;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+.form-item label {
+    position: absolute;
+    left: 0;
+    padding: 10px 5px ;
+    font-size: 1rem;
+    color:  #00dfc4;;
+    pointer-events: none;
+   
+    transition: color 0.3s, transform 0.3s;
+}
+.form-item.focused {
+    label {
+      transform: translateX(5px) translateY(-17px);
+      color: #00dfc4;
+      background: #1d2b3a;
+      border-left: 1px solid #00dfc4;
+      border-right: 1px solid #00dfc4;
+      font-size: 0.8rem;
+      padding: 0 10px;
+    }
+  }
+
+
+
+
 
