@@ -29,10 +29,10 @@ const NuevaMercaderia = () => {
           <p>Hola</p>
         </div> */}
         <div className="form-container">
-          <h2 className="form-title">Nueva Linea</h2>
+          <h2 className="form-title">Agregar Producto</h2>
           <form action="" className="form">
             <div className="form-item">
-              <label htmlFor="articulo">Articulo</label>
+              <label htmlFor="articulo">Nombre</label>
               <input
                 type="text"
                 id="articulo"
@@ -45,7 +45,7 @@ const NuevaMercaderia = () => {
               />
             </div>
             <div className="form-item">
-              <label htmlFor="cantidad">Cantidad</label>
+              <label htmlFor="cantidad">Precio de Venta</label>
               <input
                 type="text"
                 id="cantidad"
@@ -56,7 +56,7 @@ const NuevaMercaderia = () => {
               />
             </div>
             <div className="form-item">
-              <label htmlFor="unidad">Unidad</label>
+              <label htmlFor="unidad">Stock</label>
               <input
                 type="text"
                 id="unidad"
@@ -67,7 +67,7 @@ const NuevaMercaderia = () => {
               />
             </div>
             <div className="form-item">
-              <label htmlFor="precio">Precio Unitario</label>
+              <label htmlFor="precio">Costo</label>
               <input
                 type="text"
                 id="precio"

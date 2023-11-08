@@ -58,21 +58,19 @@ const DetalleMercaderia = () => {
             <p>Fecha</p>
             <input type="date" className="date-selector__item__date" />
             </div>
-            <div className="date-selector__item">
+            {/* <div className="date-selector__item">
             <p>Proveedor</p>
             <MultipleSelect options={options}/>
-            </div>
-            
-           
+            </div> */}
           </div>
 
           <table className="table">
             <thead>
               <tr>
-                <th className="table__header">Articulo </th>
-                <th className="table__header">Cantidad</th>
-                <th className="table__header">Costo Unitario</th>
-                <th className="table__header">Subtotal</th>
+                <th className="table__header">Producto</th>
+                <th className="table__header">Precio de Venta</th>
+                <th className="table__header">Stock</th>
+                <th className="table__header">Costo</th>
                 <th className="table__header">Acciones</th>
               </tr>
             </thead>
