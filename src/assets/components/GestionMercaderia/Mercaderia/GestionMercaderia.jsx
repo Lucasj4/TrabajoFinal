@@ -8,19 +8,19 @@ import MultipleSelect from "../../MultipleSelect/MultipleSelect";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Sidebar from "../../Sidebar/Sidebar";
-/* import "./GestionMercaderia.css"; */
+ import "./GestionMercaderia.css";
 
 
 
 const GestionMercaderia = () => {
   const [filas, setFilas] = useState([
-    { articulo: "Tornillo", proveedor: "Lucas", cantidad: "4" },
-    { articulo: "Cemento", proveedor: "Santiago", cantidad: "5" },
-    { articulo: "Clavos", proveedor: "Estanislao", cantidad: "1" },
-    { articulo: "Cemento", proveedor: "Estanislao", cantidad: "6" },
-    { articulo: "Clavos", proveedor: "Santiago", cantidad: "23" },
-    { articulo: "Tornillo", proveedor: "Estanislao", cantidad: "6" },
-    { articulo: "Tornillo", proveedor: "Lucas", cantidad: "12" },
+    { fecha: "20/10/2023", proveedor: "Lucas", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Santiago", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Estanislao", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Estanislao", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Santiago", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Estanislao", estado: "Pendiente" },
+    { fecha: "20/10/2023", proveedor: "Lucas", estado: "Pendiente" },
     // Agrega más filas según tus datos
   ]);
 
@@ -76,9 +76,9 @@ const GestionMercaderia = () => {
             <tbody>
               {filas.map((fila, indice) => (
                 <tr key={indice} className="table__row">
-                  <td className="table__cell">{fila.articulo}</td>
+                  <td className="table__cell">{fila.fecha}</td>
                   <td className="table__cell">{fila.proveedor}</td>
-                  <td className="table__cell">{fila.cantidad}</td>
+                  <td className="table__cell">{fila.estado}</td>
                   <td className="table__cell">
                     <a
                       href="#"

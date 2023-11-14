@@ -22,7 +22,15 @@ const Register = () => {
             <form action="">
               <div className="container__formregister__item">
                 <PersonIcon />
-                <input type="text" placeholder="Nombre completo" />
+                <input type="text" placeholder="Nombre" />
+              </div>
+              <div className="container__formregister__item">
+                <PersonIcon />
+                <input type="text" placeholder="Apellido" />
+              </div>
+              <div className="container__formregister__item">
+                <PersonIcon />
+                <input type="text" placeholder="Usuario" />
               </div>
               <div className="container__formregister__item">
                 <EmailIcon />

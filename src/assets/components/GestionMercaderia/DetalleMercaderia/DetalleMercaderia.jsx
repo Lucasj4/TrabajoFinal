@@ -58,10 +58,6 @@ const DetalleMercaderia = () => {
             <p>Fecha</p>
             <input type="date" className="date-selector__item__date" />
             </div>
-            {/* <div className="date-selector__item">
-            <p>Proveedor</p>
-            <MultipleSelect options={options}/>
-            </div> */}
           </div>
 
           <table className="table">
@@ -70,7 +66,7 @@ const DetalleMercaderia = () => {
                 <th className="table__header">Producto</th>
                 <th className="table__header">Precio de Venta</th>
                 <th className="table__header">Stock</th>
-                <th className="table__header">Costo</th>
+                <th className="table__header">Subtotal</th>
                 <th className="table__header">Acciones</th>
               </tr>
             </thead>
@@ -107,9 +103,12 @@ const DetalleMercaderia = () => {
                     >
                       <DeleteIcon />
                     </a>
+                    <Link to="/editarMercaderia">
                     <a href="#" className="table__action table__action--delete">
                       <EditIcon />
                     </a>
+                    </Link>
+                    
                   </td>
                 </tr>
               ))}

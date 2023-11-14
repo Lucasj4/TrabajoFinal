@@ -27,9 +27,11 @@
     background-color: var(--dark-blue);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start !important;
     height: 70px;
     color: #fff;
+    width: 100%;
+    padding-left: 4%;
 }
 .date-selector button{
     background-color: var(--secondary);

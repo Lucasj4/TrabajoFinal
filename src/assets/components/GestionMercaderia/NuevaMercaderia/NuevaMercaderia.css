@@ -27,6 +27,8 @@
     height: auto;
     background: #1d2b3a;
     border-radius: 10px;
+    padding-left: 3% !important;
+    padding-right: 2% !important;
   }
   
   .form-producto {
@@ -157,8 +159,31 @@
     padding: 0 10px;
   }
   
+  .input-slide{
+    background: #1d2b3a;
+    color: #fff;
+    padding: 10px 5px;
+    margin-top: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 489px !important;
+    border-radius: 10px;
+}
 
 
-
-
+.form-item-buttons {
+  display: flex;
+  width: 32% !important;
+  justify-content: space-between;
+  margin: 10px 0;
+}
 

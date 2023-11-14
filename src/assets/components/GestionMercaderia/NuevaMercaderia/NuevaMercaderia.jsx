@@ -23,89 +23,94 @@ const NuevaMercaderia = () => {
   };
 
   return (
-    <>
-      <section className="container">
-        <div className="form-container">
-          <h2 className="form-title">Agregar Producto</h2>
-          <form action="" className="form-producto">
-            <div className="form-columns">
-              <div className="form-1">
-                <div className="form-item">
-                  <label htmlFor="articulo">Nombre</label>
-                  <input
-                    type="text"
-                    id="articulo"
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChange={handleInputChange}
-                    name="Articulo"
-                    required
-                    value={articulo}
-                  />
-                </div>
-                <div className="form-item">
-                  <label htmlFor="cantidad">Precio de Venta</label>
-                  <input
-                    type="text"
-                    id="cantidad"
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div className="form-item-categoria">
-                  <label htmlFor="cantidad">Categoria</label>
-                  <select name="" id="">
-                    <option value="electricidad">Electricidad</option>
-                    <option value="construccion">Construccion</option>
-                  </select>
-                </div>
-                <div className="form-item-categoria">
-                  <label htmlFor="cantidad">Unidad</label>
-                  <select name="" id="">
-                    <option value="electricidad">Electricidad</option>
-                    <option value="construccion">Construccion</option>
-                  </select>
-                </div>
+    <section className="container">
+      <div className="form-container">
+        <h2 className="form-title">Agregar Producto</h2>
+        <form action="" className="form">
+          <div className="form-columns">
+            <div className="form-column">
+              <div className="form-item__edit">
+                <label htmlFor="articulo">Nombre</label>
+                <input
+                  type="text"
+                  id="articulo"
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={handleInputChange}
+                  name="Articulo"
+                  required
+                  value={articulo}
+                />
               </div>
-              <div className="form-1">
-                <div className="form-item">
-                  <label htmlFor="unidad">Stock</label>
-                  <input
-                    type="text"
-                    id="unidad"
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div className="form-item">
-                  <label htmlFor="precio">Costo</label>
-                  <input
-                    type="text"
-                    id="precio"
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div className="form-item">
-                  <label htmlFor="precio">Costo</label>
-                </div>
-                <div className="form-item">
-                  <label htmlFor="">Subtotal</label>
-                </div>
+              <div className="form-item__edit">
+                <label htmlFor="cantidad">Precio de Venta</label>
+                <input
+                  type="text"
+                  id="cantidad"
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="form-item__edit">
+                <label htmlFor="cantidad">Categoria</label>
+                <select name="" id="" className="input-slide">
+                  <option value="electricidad">Electricidad</option>
+                  <option value="construccion">Construccion</option>
+                </select>
               </div>
             </div>
-
-    
-          </form>
-        </div>
-      </section>
-    </>
+            <div className="form-column">
+              <div className="form-item__edit">
+                <label htmlFor="unidad">Unidad</label>
+                <select name="" id="" className="input-slide">
+                  <option value="electricidad">Electricidad</option>
+                  <option value="construccion">Construccion</option>
+                </select>
+              </div>
+              <div className="form-item__edit">
+                <label htmlFor="precio">Stock</label>
+                <input
+                  type="text"
+                  id="precio"
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="form-item__edit">
+                <label htmlFor="precio">Costo</label>
+                <input
+                  type="text"
+                  id="precio"
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="form-item__edit">
+                <label htmlFor="">Subtotal </label>
+                <input
+                  type="text"
+                  id="precio"
+                  onFocus={handleFocus}
+                  onBlur={handleBlur}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div className="form-item-buttons">
+            <Link to={'/detalleMercaderia'}><button>Salir</button></Link>
+            <Link to={'/detalleMercaderia'}><button>Guardar</button></Link>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 };
 

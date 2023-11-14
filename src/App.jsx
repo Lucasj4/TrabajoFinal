@@ -12,6 +12,11 @@ import OlvidarContraseña from "./assets/components/OlvidarContraseña/OlvidarCo
 import GestionMercaderia from "./assets/components/GestionMercaderia/Mercaderia/GestionMercaderia";
 import DetalleMercaderia from "./assets/components/GestionMercaderia/DetalleMercaderia/DetalleMercaderia";
 import NuevaMercaderia from "./assets/components/GestionMercaderia/NuevaMercaderia/NuevaMercaderia";
+import AdministrarUsuario from "./assets/components/AdministradorDeUsuarios/AdministrarUsuario/AdministrarUsuario";
+import EditarUsuario from "./assets/components/AdministradorDeUsuarios/EditarUsuario/EditarUsuario";
+import NuevoUsuario from "./assets/components/AdministradorDeUsuarios/NuevoUsuario/NuevoUsuario";
+import EditarMercaderia from "./assets/components/GestionMercaderia/EditarMercaderia/EditarMercaderia";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +36,10 @@ function App() {
       <Route path="/mercaderia" element={<GestionMercaderia/>}/>
       <Route path="/detalleMercaderia" element={<DetalleMercaderia/>}/>
       <Route path="/nuevaMercaderia" element={<NuevaMercaderia/>}/>
+      <Route path="/administrarUsuario" element={<AdministrarUsuario/>}/>
+      <Route path="/editarUsuario" element={<EditarUsuario/>}/>
+      <Route path="/nuevoUsuario" element={<NuevoUsuario/>}/>
+      <Route path="/editarMercaderia" element={<EditarMercaderia/>}/>
 
 
     </Routes>
